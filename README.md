@@ -29,14 +29,14 @@ Initialize the repository using the NPM package manager with the command `npm in
 
 ```bash
 npm init -y
-npm install sass
+npm install sass --save-dev
 ```
 ## SASS Integration
 
 Create essential files for the application: `index.html`, `base.scss`, and `style.css` (to be ignored by GitHub). Add styling to `base.scss` and compile it using the command:
 
 ```bash
-sass base.scss style.css
+npx sass css/base.scss css/style.css
 ```
 
 ## Initial HTML and CSS
@@ -52,3 +52,5 @@ Implement logic for handling user events in script.js, obtaining values from the
 Document the entire process on Notion.so for discussion with peers. Prepare to present and provide feedback during the group discussion.
 
 Feel free to adapt and modify the README according to your project's specific details and requirements.
+
+

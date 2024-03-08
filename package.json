@@ -1,7 +1,7 @@
 {
   "name": "teoria_de_triangulo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project aims to create a web application that allows users to explore the theory of triangles. The application will provide functionalities to determine the type of triangle based on three given sides, classify it by angles and sides, and calculate its area and perimeter. The development process involves using Google to find relevant mathematical formulas, designing an interface prototype in draw.io, setting up a repository with NPM and SASS, and implementing the functionality using HTML, CSS, and JavaScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.71.1"
   }
 }
