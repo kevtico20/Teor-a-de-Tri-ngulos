@@ -1,102 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teorema triangulos</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <div id="navigationBar" class="container">
-        <p>Programming Task 4</p>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#aboutUsSection">About Us</a></li>
-            <li><a href="#skillsSection">Skills</a></li>
-            <li><a href="#worksSection">Works</a></li>
-            <li><a href="#contactSection">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <section id="triangleSection">
-      <div class="containerDiv">
-        <div class="divLateral">
-          <h3>Lados</h3>
-          <div>
-            <label for="number">A:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-          <div>
-            <label for="number">B:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-          <div>
-            <label for="number">C:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-        </div>
-        <div class="divCentral"></div>
-        <div class="divLateral">
-            <h3>Angulos</h3>
-          <div>
-            <label for="number">a1:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-          <div>
-            <label for="number">a2:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-          <div>
-            <label for="number">a3:</label>
-            <input
-              type="number"
-              id="txtSide"
-              required
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teorema triangulos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <footer>
-      <div id="copyright">
-        <div id="footPage" class="container">
-          <a href="#" target="_blank"
-            ><img src="media/icons/facebookIcon.svg" alt=""
-          /></a>
-          <a href="#" target="_blank"
-            ><img src="media/icons/twitterIcon.svg" alt=""
-          /></a>
-          <a href="#" target="_blank"
-            ><img src="media/icons/instagramIcon.svg" alt=""
-          /></a>
-        </div>
-        <small>&copy All rights reserved</small>
+<body>
+  <header>
+    <div id="navigationBar" class="container">
+      <p>Programming Task 4</p>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#aboutUsSection">About Us</a></li>
+          <li><a href="#skillsSection">Skills</a></li>
+          <li><a href="#worksSection">Works</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section id="triangleSection">
+        <form id="trian">
+          <div class="containerDiv">
+            <div class="divLateral">
+              <h3>Lados</h3>
+              <div>
+
+
+                <label " for=" txtSideA">A:</label>
+                <input type="number" id="txtSideA" />
+
+              </div>
+              <div>
+                <label for="txtSideB">B:</label>
+                <input type="number" id="txtSideB" />
+              </div>
+              <div>
+                <label for="txtSideC">C:</label>
+                <input type="number" id="txtSideC" />
+              </div>
+
+            </div>
+            <div class="divCentral"></div>
+            <div class="divLateral">
+              <h3>Angulos</h3>
+              <div>
+                <label for="anguloA">a1:</label>
+                <input type="number" id="anguloA" />
+              </div>
+              <div>
+                <label for="anguloB">a2:</label>
+                <input type="number" id="anguloB" />
+              </div>
+              <div>
+                <label for="anguloC">a3:</label>
+                <input type="number" id="anguloC" />
+              </div>
+            </div>
+
+          </div>
+          <button type="reset" style="background-color: black; color: white;" id="calcular-btn">Resetear</button>
+        </form>
+        <h2>Resultados</h2>
+        <p>Lados:<span style="color: #000;" id="resultado-lados"></span></p>
+        <p>Angulos:<span style="color: #000;" id="resultado-angulos"></span></p>
+        <p>Area:<span style="color: #000;" id="resultado-area"></span></p>
+        <p>Perimetro:<span style="color: #000;" id="resultado-perimetro"></span></p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div id="copyright">
+      <div id="footPage" class="container">
+        <!-- <a href="#" target="_blank"><img src="media/icons/facebookIcon.svg" alt="" /></a>
+        <a href="#" target="_blank"><img src="media/icons/twitterIcon.svg" alt="" /></a>
+        <a href="#" target="_blank"><img src="media/icons/instagramIcon.svg" alt="" /></a> -->
       </div>
-    </footer>
-  </body>
+      <small>&copy All rights reserved</small>
+    </div>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/calculos.js"></script>
+
 </html>
