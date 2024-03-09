@@ -5,22 +5,7 @@ $color-four: #000;
 $color-five: linear-gradient(135deg, #333333, #ffd700);
 $color-six: #333;
 $color-seven: #f0f0f0;
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+$font-bold: bold;
 
 * {
   box-sizing: border-box;
@@ -47,7 +32,7 @@ h2 {
 
 p {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: $font-bold;
 }
 
 span {
@@ -60,7 +45,7 @@ span {
   margin: 0 auto;
 }
 
-/*header-------------------------------------------------------------------------------------*/
+//header-------------------------------------------------------------------------------------
 header {
   background-color: $color-one;
   align-items: center;
@@ -77,7 +62,7 @@ header {
       margin: 0;
       color: $color-two;
       padding: 15px 20px;
-      font-weight: bold;
+      font-weight: $font-bold;
     }
 
     nav {
@@ -107,7 +92,7 @@ header {
             display: block;
             text-decoration: none;
             padding: 10px;
-            font-weight: bold;
+            font-weight: $font-bold;
             color: $color-two;
             text-align: center;
 
@@ -124,13 +109,12 @@ header {
   }
 }
 
-/*footer-------------------------------------------------------------------------------------*/
+//footer-------------------------------------------------------------------------------------
 footer {
   border-top: 1px solid $color-two;
   padding: 10px;
   text-align: center;
   background-color: $color-four;
-
 
   #copyright {
     display: flex;
@@ -155,7 +139,6 @@ footer {
   }
 }
 
-
 input[type="number"] {
   border: 2px solid $color-one;
   border-radius: 10px;
@@ -177,17 +160,16 @@ input[type="number"] {
   height: 40px;
   border: none;
   font-size: 25px;
-}
 
-.btn:hover {
-  background-color: $color-three;
-  color: $color-one;
+  &:hover {
+    background-color: $color-three;
+    color: $color-one;
+  }
 }
 
 .center {
   text-align: center;
   padding: 20px;
-
 }
 
 .containerDiv {
@@ -199,7 +181,7 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centra horizontalmente */
+    // Centra horizontalmente
     align-items: center;
     width: 25%;
 
