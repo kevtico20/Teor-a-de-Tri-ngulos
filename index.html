@@ -11,14 +11,13 @@
 <body>
   <header>
     <div id="navigationBar" class="container">
-      <p>Programming Task 4</p>
+      <p>Tarea de Programación 4</p>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#aboutUsSection">About Us</a></li>
-          <li><a href="#skillsSection">Skills</a></li>
-          <li><a href="#worksSection">Works</a></li>
-          <li><a href="#contactSection">Contact</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#skillsSection">Calculos</a></li>
+          <li><a href="#worksSection">Ajustes</a></li>
+          <li><a href="#contactSection">Formas Geometricas</a></li>
         </ul>
       </nav>
     </div>
@@ -26,54 +25,63 @@
   <main>
     <article>
       <section id="triangleSection">
-        <form id="trian">
-          <div class="containerDiv">
-            <div class="divLateral">
-              <h3>Lados</h3>
-              <div>
-
-
-                <label " for=" txtSideA">A:</label>
-                <input type="number" id="txtSideA" />
+        <div class="container">
+          <h2>Calculadora de Triangulos</h2>
+          <form id="trian">
+            <div class="containerDiv">
+              <div class="divLateral">
+                <h3>Lados</h3>
+                <div>
+                  <label " for=" txtSideA">A:</label>
+                  <input type="number" id="txtSideA" />
+                </div>
+                <div>
+                  <label for="txtSideB">B:</label>
+                  <input type="number" id="txtSideB" />
+                </div>
+                <div>
+                  <label for="txtSideC">C:</label>
+                  <input type="number" id="txtSideC" />
+                </div>
 
               </div>
-              <div>
-                <label for="txtSideB">B:</label>
-                <input type="number" id="txtSideB" />
+              <div class="divCentral">
+                <canvas id="myCanvas" width="400" height="300"></canvas>
               </div>
-              <div>
-                <label for="txtSideC">C:</label>
-                <input type="number" id="txtSideC" />
+              <div class="divLateral">
+                <h3>Angulos</h3>
+                <div>
+                  <label for="anguloA">a1:</label>
+                  <input type="number" id="anguloA" />
+                </div>
+                <div>
+                  <label for="anguloB">a2:</label>
+                  <input type="number" id="anguloB" />
+                </div>
+                <div>
+                  <label for="anguloC">a3:</label>
+                  <input type="number" id="anguloC" />
+                </div>
               </div>
 
             </div>
-            <div class="divCentral">
-              <canvas id="myCanvas" width="400" height="300"></canvas>
-            </div>
-            <div class="divLateral">
-              <h3>Angulos</h3>
-              <div>
-                <label for="anguloA">a1:</label>
-                <input type="number" id="anguloA" />
-              </div>
-              <div>
-                <label for="anguloB">a2:</label>
-                <input type="number" id="anguloB" />
-              </div>
-              <div>
-                <label for="anguloC">a3:</label>
-                <input type="number" id="anguloC" />
-              </div>
-            </div>
+            <div class="center">
+              <button class="btn" type="reset" id="calcular-btn">Resetear</button>
 
-          </div>
-          <button type="reset" style="background-color: black; color: white;" id="calcular-btn">Resetear</button>
-        </form>
-        <h2>Resultados</h2>
-        <p>Lados:<span style="color: #000;" id="resultado-lados"></span></p>
-        <p>Angulos:<span style="color: #000;" id="resultado-angulos"></span></p>
-        <p>Area:<span style="color: #000;" id="resultado-area"></span></p>
-        <p>Perimetro:<span style="color: #000;" id="resultado-perimetro"></span></p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+
+          <h2>Resultados</h2>
+          <p>Lados:<span id="resultado-lados"></span></p>
+          <p>Angulos:<span id="resultado-angulos"></span></p>
+          <p>Area:<span id="resultado-area"></span></p>
+          <p>Perimetro:<span id="resultado-perimetro"></span></p>
+        </div>
+
       </section>
     </article>
   </main>
@@ -89,7 +97,8 @@
   </footer>
 </body>
 <script src="./js/script.js"></script>
-<script src="./js/triangulo.js"></script>
 <script src="./js/calculos.js"></script>
+<script src="./js/triangulo.js"></script>
+
 
 </html>
